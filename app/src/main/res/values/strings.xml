@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">proyecto1</string>
+    <string name="primer_activity">myApp</string>
+    <string name="call">LLamar</string>
+    <string name="url">Google</string>
+    <string name="alarma">Alarma</string>
+    <string name="email">correo</string>
 </resources>
