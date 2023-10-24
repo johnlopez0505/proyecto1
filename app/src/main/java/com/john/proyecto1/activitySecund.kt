@@ -42,31 +42,33 @@ class activitySecund : AppCompatActivity() {
     }
 
     private fun requestPermissions() {
-        if (Build.VERSION. SDK_INT >= Build.VERSION_CODES. M){ //Tenemos que ver si pedimos permisos
-            if (PermissionPhone()){ //Hay que solicitar permisos. Si ya concedimos los permisos
-                call() //Realizamos la llamada.
+        if (Build.VERSION. SDK_INT >= Build.VERSION_CODES. M){
+            if (PermissionPhone()){
+                call()
             }
-            else{ //Tenemos que solicitar al usuario los permisos.
+            else{
                 requestPermissionLauncher.launch(Manifest.permission.CALL_PHONE)
             }
         }else{
-            call() //No es necesario solicitar permisos, ya que es una API < 23
+            call()
         }
     }
 
     private fun call() {
         val intent = Intent(Intent. ACTION_CALL).apply {
-            data = Uri.parse( "tel:$PHONE") //No me complico, es el mismo teléfono.
+            data = Uri.parse( "tel:$PHONE")
         }
         startActivity(intent)
     }
 
-    //Devuelve true si el usuario permitió los permisos de llamada.
-    private fun PermissionPhone(): Boolean = ContextCompat.checkSelfPermission( this, Manifest.permission.CALL_PHONE) == PackageManager. PERMISSION_GRANTED
+
+    private fun PermissionPhone(): Boolean = ContextCompat.checkSelfPermission( this,
+        Manifest.permission.CALL_PHONE) == PackageManager. PERMISSION_GRANTED
 
 
 
-    private val requestPermissionLauncher = registerForActivityResult(ActivityResultContracts.RequestPermission()) {  isGranted ->
+    private val requestPermissionLauncher = registerForActivityResult(ActivityResultContracts.
+        RequestPermission()) {  isGranted ->
         if (isGranted) {
             call()
         } else {
