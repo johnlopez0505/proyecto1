@@ -1,13 +1,15 @@
 <resources>
     <string name="app_name">APP_JOHN</string>
     <string name="primer_activity">Mi Primer Aplicación</string>
-    <string name="call">LLamar</string>
+    <string name="call">Call</string>
     <string name="url">Google</string>
     <string name="alarma">Alarma</string>
     <string name="email">correo</string>
     <string name="google">Google</string>
     <string name="llamar">llamar</string>
-    <string name="goole">Google</string>
+    <string name="Email">Email</string>
     <string name="marcar">marcar</string>
     <string name="numero">#112</string>
+    <string name="alarm">Alarm</string>
+    <string name="txtgoogle">Google</string>
 </resources>
