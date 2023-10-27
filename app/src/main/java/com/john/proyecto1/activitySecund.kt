@@ -17,7 +17,7 @@ class activitySecund : AppCompatActivity() {
     private lateinit var buttonCall2: ImageButton
     private lateinit var txtName: TextView
     companion object{
-        const val PHONE = "623260769"
+        const val PHONE = "623260768"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
