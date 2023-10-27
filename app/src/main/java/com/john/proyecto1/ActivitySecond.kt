@@ -13,7 +13,7 @@ import android.Manifest;
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 
-class activitySecund : AppCompatActivity() {
+class ActivitySecond : AppCompatActivity() {
     private lateinit var buttonCall2: ImageButton
     private lateinit var txtName: TextView
     companion object{

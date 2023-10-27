@@ -6,8 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.AlarmClock
 import android.widget.ImageButton
-import android.widget.TextView
-import android.widget.Toast
 
 class ActivityPrincipal : AppCompatActivity() {
 
@@ -36,7 +34,7 @@ class ActivityPrincipal : AppCompatActivity() {
         val minutes = 30
 
         buttonCall.setOnClickListener {
-            intent = Intent(this, activitySecund::class.java).apply {
+            intent = Intent(this, ActivitySecond::class.java).apply {
                 putExtra("name", "LLamar a Emergencias")
             }
             startActivity(intent)
