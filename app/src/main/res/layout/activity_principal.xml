@@ -3,98 +3,156 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/fondo_android"
+    android:background="@drawable/fondo_terror"
     android:layout_height="match_parent"
     tools:context=".ActivityPrincipal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#5CAE97"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/text_inicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ECF6A0"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:text="@string/tex_inicio"/>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="196dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="68dp"
+
+        android:adjustViewBounds="true"
+        android:background="@mipmap/halloween_icono_round"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textApp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:textSize="30sp"
         android:text="@string/primer_activity"
+        android:background="#40B175"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
 
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.554"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.100" />
-
+        app:layout_constraintVertical_bias="0.341" />
 
 
     <ImageButton
         android:id="@+id/btn_call"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src ="@mipmap/llamar"
-        android:contentDescription="@string/llamar"
         android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/llamar"
+        android:src="@mipmap/llamar"
         app:layout_constraintBottom_toBottomOf="parent"
 
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.20"
+        app:layout_constraintHorizontal_bias="0.098"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.300" />
-
-
+        app:layout_constraintVertical_bias="0.448" />
 
     <ImageButton
         android:id="@+id/btn_url"
-        android:text="@string/url"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="84dp"
+        android:layout_height="98dp"
         android:backgroundTint="#00FBFBF7"
         android:contentDescription="@string/google"
         android:src="@drawable/google_g_2015"
+        android:text="@string/url"
         app:layout_constraintBottom_toBottomOf="parent"
 
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.300" />
-
-
+        app:layout_constraintVertical_bias="0.453" />
 
 
     <ImageButton
         android:id="@+id/btn_alarma"
-        android:text="@string/alarma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#00FBFBF7"
         android:contentDescription="@string/alarma"
         android:src="@mipmap/alarm"
+        android:text="@string/alarma"
 
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.20"
+        app:layout_constraintHorizontal_bias="0.098"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.600" />
-
-
+        app:layout_constraintVertical_bias="0.639" />
 
     <ImageButton
         android:id="@+id/btn_email"
-        android:text="@string/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#00FBFBF7"
         android:contentDescription="@string/email"
         android:src="@mipmap/email_round"
+        android:text="@string/email"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.80"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.600" />
+        app:layout_constraintVertical_bias="0.639" />
+
+    <ImageButton
+        android:id="@+id/btn_salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FBFBF7"
+        android:contentDescription="@string/alarma"
+        android:src="@mipmap/regresar_round"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.639" />
+
+    <ImageButton
+        android:id="@+id/btn_cascar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FBFBF7"
+        android:contentDescription="@string/email"
+        android:src="@mipmap/login_round"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448" />
 
     <TextView
         android:id="@+id/textCall"
@@ -102,15 +160,15 @@
         android:layout_height="wrap_content"
         android:text="@string/call"
         android:textColor="@color/white"
-        android:textStyle="italic"
         android:textSize="20sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
 
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.400"  />
+        app:layout_constraintVertical_bias="0.53" />
 
     <TextView
         android:id="@+id/textGoogle"
@@ -118,16 +176,15 @@
         android:layout_height="wrap_content"
         android:text="@string/txtgoogle"
         android:textColor="@color/white"
-        android:textStyle="italic"
         android:textSize="20sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
 
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.386"/>
-
+        app:layout_constraintVertical_bias="0.53" />
 
     <TextView
         android:id="@+id/textAlarm"
@@ -135,16 +192,16 @@
         android:layout_height="wrap_content"
         android:text="@string/alarm"
         android:textColor="@color/white"
-        android:textStyle="italic"
         android:textSize="20sp"
+        android:textStyle="italic"
 
         app:layout_constraintBottom_toBottomOf="parent"
 
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintHorizontal_bias="0.144"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.665" />
+        app:layout_constraintVertical_bias="0.7" />
 
     <TextView
         android:id="@+id/textEmail"
@@ -152,14 +209,87 @@
         android:layout_height="wrap_content"
         android:text="@string/Email"
         android:textColor="@color/white"
-        android:textStyle="italic"
         android:textSize="20sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
 
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.664" />
+        app:layout_constraintVertical_bias="0.7" />
+
+    <TextView
+        android:id="@+id/text_salir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/salir"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.838"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <TextView
+        android:id="@+id/text_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.845"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="480dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        android:elevation="@dimen/cardview_compat_inset_shadow"
+        app:cardCornerRadius="25dp"
+        android:backgroundTint="#CED695"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="50dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/calabazas"
+                app:cardCornerRadius="50dp" />
+
+            <TextView
+                android:id="@+id/text_hallow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:text="@string/texto" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
