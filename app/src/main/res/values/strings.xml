@@ -12,4 +12,8 @@
     <string name="numero">623260768</string>
     <string name="alarm">Alarm</string>
     <string name="txtgoogle">Google</string>
+    <string name="salir">Salir</string>
+    <string name="login">login</string>
+    <string name="texto">\"Truco o trato, la noche de las brujas ha llegado para hechizarte con diversion macabra.\"</string>
+    <string name="tex_inicio">Clase PMPM 2023/2024</string>
 </resources>
