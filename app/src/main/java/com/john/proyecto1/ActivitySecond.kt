@@ -29,7 +29,7 @@ class ActivitySecond : AppCompatActivity() {
 
     private fun showData() {
         txtName = findViewById(R.id.marcar)
-        val name = getIntent().getStringExtra("name")
+        val name = intent.getStringExtra("name")
         txtName.text = name
         Toast.makeText(this, "Datos mostrados con éxito", Toast.LENGTH_LONG).show()
     }
@@ -43,7 +43,7 @@ class ActivitySecond : AppCompatActivity() {
 
     private fun requestPermissions() {
         if (Build.VERSION. SDK_INT >= Build.VERSION_CODES. M){
-            if (PermissionPhone()){
+            if (permissionPhone()){
                 call()
             }
             else{
@@ -62,7 +62,7 @@ class ActivitySecond : AppCompatActivity() {
     }
 
 
-    private fun PermissionPhone(): Boolean = ContextCompat.checkSelfPermission( this,
+    private fun permissionPhone(): Boolean = ContextCompat.checkSelfPermission( this,
         Manifest.permission.CALL_PHONE) == PackageManager. PERMISSION_GRANTED
 
 

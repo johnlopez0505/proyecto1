@@ -92,7 +92,8 @@ class ActivityPrincipal : AppCompatActivity() {
         val subject = "saludo"
         val content = "Hola clase PMP 23/24 "
         buttonEmail.setOnClickListener{
-            intent = Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto","clase2Dam@educand.es",null)).apply {
+            intent = Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto","clase2Dam@educand.es",
+                null)).apply {
                 putExtra(Intent.EXTRA_SUBJECT,subject)
                 putExtra(Intent.EXTRA_TEXT,content)
             }

@@ -10,14 +10,24 @@ import android.widget.Toast
 class Login : AppCompatActivity() {
     private lateinit var editTextUsername: EditText
     private lateinit var editTextPassword: EditText
-
+    private lateinit var buttonRegistrar : Button
+    private lateinit var buttonLogin     : Button
+    companion object{
+        const val MYUSER = "john" // tu usuario
+        const val MYPASS = "1234" // tu contraseña
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        initEvent()
+    }
+
+    private fun initEvent() {
         editTextUsername = findViewById(R.id.editTextUsername)
         editTextPassword = findViewById(R.id.editTextPassword)
-        val buttonLogin = findViewById<Button>(R.id.buttonLogin)
+        buttonRegistrar  = findViewById(R.id.button_registrar)
+        buttonLogin      = findViewById(R.id.buttonLogin)
 
         buttonLogin.setOnClickListener {
             validarCredenciales()
@@ -25,16 +35,13 @@ class Login : AppCompatActivity() {
     }
 
     private fun validarCredenciales() {
-        val usuario    = editTextUsername.text.toString()
-        val contraseña = editTextPassword.text.toString()
+        val user     = editTextUsername.text.toString()
+        val password = editTextPassword.text.toString()
 
-        val MYUSER = "john"  // tu usuario
-        val MYPASS = "1234"  // tu contraseña
-
-        if (usuario == MYUSER && contraseña == MYPASS) {
+        if (user == MYUSER && password == MYPASS) {
             // Credenciales válidas, iniciar Activity principal
             val intent = Intent(this, ActivityPrincipal::class.java).apply {
-                putExtra("name", "Bienvenido: $usuario")  // Pasar el usuario como argumento al
+                putExtra("name", "Bienvenido: $user")  // Pasamos el usuario como argumento al
                 // Activity principal
             }
             startActivity(intent)

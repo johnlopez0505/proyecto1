@@ -21,7 +21,7 @@
             android:gravity="center"
             android:text="@string/tex_inicio"
             android:textColor="#ECF6A0"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:textStyle="bold" />
 
 
@@ -34,7 +34,6 @@
         android:layout_height="134dp"
         android:layout_marginStart="104dp"
         android:layout_marginTop="44dp"
-
         android:adjustViewBounds="true"
         android:background="@mipmap/halloween_icono_round"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,7 +64,6 @@
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.554"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,7 +79,6 @@
         android:contentDescription="@string/llamar"
         android:src="@mipmap/llamar"
         app:layout_constraintBottom_toBottomOf="parent"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.098"
         app:layout_constraintStart_toStartOf="parent"
@@ -97,7 +94,6 @@
         android:src="@drawable/google_g_2015"
         android:text="@string/url"
         app:layout_constraintBottom_toBottomOf="parent"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -113,8 +109,6 @@
         android:contentDescription="@string/alarma"
         android:src="@mipmap/alarm"
         android:text="@string/alarma"
-
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.098"
@@ -130,7 +124,6 @@
         android:contentDescription="@string/email"
         android:src="@mipmap/email_round"
         android:text="@string/email"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -209,9 +202,7 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="italic"
-
         app:layout_constraintBottom_toBottomOf="parent"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.144"
         app:layout_constraintStart_toStartOf="parent"
@@ -227,7 +218,6 @@
         android:textSize="20sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
@@ -243,7 +233,6 @@
         android:textSize="20sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.838"
         app:layout_constraintStart_toStartOf="parent"
@@ -259,7 +248,6 @@
         android:textSize="20sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.845"
         app:layout_constraintStart_toStartOf="parent"
@@ -281,10 +269,11 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_margin="20dp"
-            app:cardCornerRadius="50dp"
-            android:layout_height="match_parent">
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="50dp"
+                android:layout_height="match_parent"
+                tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:layout_width="170dp"
